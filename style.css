@@ -1,0 +1,145 @@
+@charset "utf-8";
+@font-face {
+    font-family:Passion_One;
+    src: url("fontes/PassionOne-Bold.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family:Passion_One-regular;
+    src: url("fontes/PassionOne-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family:Sriracha;
+    src: url("fontes/Sriracha-Regular.ttf")
+    format("truetype");
+}
+/*RESET CSS*/
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+/*Criando variáveis*/
+:root{
+    --cor01:white;
+    --cor02:black;
+    --cor03:rgba(0, 0, 0, 0.301);
+
+    --font1:Passion_One;
+    --font2:Passion_One-regular;
+    --font3:Sriracha;
+    --font4:verdana;
+}
+/*Formatação do header*/
+header{
+    background-color: var(--cor02);
+    height:100px;
+}
+header h1{
+    color: var(--cor01);
+    font-family: var(--font1);
+    
+}
+header p{
+    color: var(--cor01);
+    font-family: var(--font4);
+    font-weight:100;
+}
+.link{
+    color: var(--cor01);
+}
+.link:hover{
+    font-family: var(--font1);
+    text-decoration:underline;
+    color: var(--cor02);
+    background-color: var(--cor01);
+    border-radius:3px;
+    padding:2px;   
+}
+header div{
+    margin: auto;
+    padding-top: 15px;
+    width:250px;
+    min-width: auto;
+    height:70px;
+}
+/*Formatação do MAIN(CONTEÚDO PRINCIPAL)*/
+main p{
+    max-width: 500px;
+    min-width: 200px;
+    font-family: var(--font3),var(--font4);
+    font-size: 1.5em;
+    margin-left:20px;
+    text-align: left;
+    max-height: auto;
+    line-height:2em;
+}
+#img01{
+    min-height:auto;
+    height: 650px;
+    background-attachment: fixed;
+    background-position: right center;
+    background-image: url("pacote-d012/imagens/background001.jpg");
+    background-repeat: no-repeat;   
+    padding: 5px;
+    position: relative;
+}
+#img01 p{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    color: var(--cor01);
+    background-color: var(--cor03);
+    border-radius: 10px;
+    width: 300px;
+}
+#img02{
+    width: 100%;
+    min-height:auto;
+    height: 650px;
+    background-attachment: fixed;
+    background-position: right center;
+    background-image: url("pacote-d012/imagens/background002.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;   
+    padding: 5px;
+    position: relative;
+}
+#img02 p{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    color: var(--cor01);
+    background-color: var(--cor03);
+    border-radius: 10px;
+    width: 300px;
+}
+.conteúdo{
+    height: auto;
+    padding: 10px;
+}
+footer{
+    height:50px;
+    background-color: var(--cor02);
+    position: relative;
+}
+footer>p{
+    position: absolute;
+    left:40%;
+    top:25%;
+    display: inline;
+    color:var(--cor01);
+    font-family: var(--font4);
+    font-size: 1.5em;
+}
+footer a{
+    color: var(--cor01);
+}
+footer a:hover{
+    color: var(--cor02);
+    background-color: var(--cor01);
+    text-decoration: underline;
+}
