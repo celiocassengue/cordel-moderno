@@ -41,7 +41,7 @@ header{
 header h1{
     color: var(--cor01);
     font-family: var(--font1);
-    
+    /*font-size:10vw;*/
 }
 header p{
     color: var(--cor01);
@@ -71,6 +71,7 @@ main p{
     max-width: 500px;
     min-width: 200px;
     font-family: var(--font3),var(--font4);
+    /*font-size:3vw;*/
     font-size: 1.5em;
     margin-left:20px;
     text-align: left;
@@ -83,11 +84,13 @@ main p{
     background-attachment: fixed;
     background-position: right center;
     background-image: url("pacote-d012/imagens/background001.jpg");
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    background-size: cover;   
     padding: 5px;
     position: relative;
 }
 #img01 p{
+    display: inline-block;
     position: absolute;
     left: 7%;
     top: 20%;
@@ -104,11 +107,12 @@ main p{
     background-position: right center;
     background-image: url("pacote-d012/imagens/background002.jpg");
     background-repeat: no-repeat;
-    background-size: auto;   
+    background-size: cover;   
     padding: 5px;
     position: relative;
 }
 #img02 p{
+    display: inline-block;
     position: absolute;
     left: 7%;
     top: 20%;
